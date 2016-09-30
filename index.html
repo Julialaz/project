@@ -2,34 +2,37 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
         <title>Website of Iuliia Lazurkevych</title>
     </head>
     <body>
 <!--page1-->
 <!--fixed-->
-        <header>
-            <h1>Iuliia Lazurkevych</h1>
-        </header>
-        <nav>
-            <a href="">Main</a>
-            <a href="">About</a>
-            <a href="">Skills</a>
-            <a href="">Contact</a>
-        </nav>
-<!--fixed-->
-        <section>
-            <h2>Welcome to my personal wesite.</h2>
-            <p>Let me wish you a warm welcome to my personal website.<br>
-            Here you can find information about me and my interests.<br></p>
-        </section>
-        <img src="" alt="">
+        <div>
+            <header id=fixedpart>
+                <h1 id="name">Iuliia Lazurkevych</h1>
+                <nav>
+                    <a href="">Main</a>
+                    <a href="">About</a>
+                    <a href="">Skills</a>
+                    <a href="">Contact</a>
+                </nav>
+            </header>
+            <section>
+                <h2>Welcome to my personal wesite.</h2>
+                <p>Let me wish you a warm welcome to my personal website.<br>
+                Here you can find information about me and my interests.<br></p>
+            </section>
+            <img src="" alt="">
+        </div>
+
 <!--page2-->
         <img src="" alt="">
         <section>
             <h3>A few facts about myself</h3>
             <p>
                 Hello, my name is Iuliia. I have a British shorthair straight cat named Asja,<br>
-                I like coffe, my favorite food is chocolate, my favourite sport is skiing. <br>
+                I like frappe, my favorite food is chocolate, my favourite sport is skiing. <br>
                 I am skiing for 20 years and I'm still having fun and as long as skiing is enjoyable, <br>
                 I'm going to continue to do it. If you're having fun, then everything else will come easy to you.<br>
             </p>
@@ -64,8 +67,8 @@
                 <input type="text" name="secondname" id="secondname" required><br>
                 <label for="email">Email Address:</label><br>
                 <input type="email" name="email" id="email" required><br>
-                <label for="message">Your Message:</label><br>
-                <textarea name="message" placeholder="Send something awesome to my inbox." rows="8" cols="50" required></textarea><br>
+                <label for="comment">Your Message:</label><br>
+                <textarea name="comment" placeholder="Send something awesome to my inbox." rows="8" cols="50" required></textarea><br>
                 <input type="submit" name="submit" value="Send">
                 <input type="reset" name="reset" value="Reset">
             </form>

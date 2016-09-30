@@ -1,0 +1,17 @@
+* {
+    font-family: Lora;
+    margin: 0 auto;
+    
+    }
+    
+#name {
+    float: left;
+    font-size: 68px; 
+    font-weight: 700;
+}
+
+#fixedpart {
+    background-color: #91766f;
+    opacity: 0,5;
+}
+
