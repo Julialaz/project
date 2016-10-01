@@ -7,25 +7,22 @@
     </head>
     <body>
 <!--page1-->
-<!--fixed-->
-        <div>
-            <header id=fixedpart>
+        <div id=firstpage>
+            <header>
                 <h1 id="name">Iuliia Lazurkevych</h1>
-                <nav>
-                    <a href="">Main</a>
-                    <a href="">About</a>
-                    <a href="">Skills</a>
-                    <a href="">Contact</a>
+                <nav id="navmenu">
+                    <a href="" class="menubutton">Main</a>
+                    <a href="" class="menubutton">About</a>
+                    <a href="" class="menubutton">Skills</a>
+                    <a href="" class="menubutton">Contact</a>
                 </nav>
             </header>
-            <section>
-                <h2>Welcome to my personal wesite.</h2>
-                <p>Let me wish you a warm welcome to my personal website.<br>
-                Here you can find information about me and my interests.<br></p>
+            <section id="weltext">
+                <h2>Welcome to my personal wesite</h2>
+                <p>Let me wish you a warm welcome to my personal website<br>
+                Here you can find information about me and my interests<br></p>
             </section>
-            <img src="" alt="">
         </div>
-
 <!--page2-->
         <img src="" alt="">
         <section>
@@ -37,10 +34,12 @@
                 I'm going to continue to do it. If you're having fun, then everything else will come easy to you.<br>
             </p>
         </section>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <div id=images>
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
 <!--page 3-->
         <section>
             <h3>Personal Skills</h3>
@@ -67,8 +66,8 @@
                 <input type="text" name="secondname" id="secondname" required><br>
                 <label for="email">Email Address:</label><br>
                 <input type="email" name="email" id="email" required><br>
-                <label for="comment">Your Message:</label><br>
-                <textarea name="comment" placeholder="Send something awesome to my inbox." rows="8" cols="50" required></textarea><br>
+                <label for="comments">Your Message:</label><br>
+                <textarea name="comments" placeholder="Send something awesome to my inbox." rows="8" cols="50" required></textarea><br>
                 <input type="submit" name="submit" value="Send">
                 <input type="reset" name="reset" value="Reset">
             </form>

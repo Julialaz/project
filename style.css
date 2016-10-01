@@ -1,17 +1,59 @@
 * {
-    font-family: Lora;
     margin: 0 auto;
-    
-    }
-    
+    max-width: 960px;
+}
+
+#firstpage {
+    background-image: url(keyboard-690066_960_720.jpg);
+    height: 610px;
+    width: 960px;
+}
+
 #name {
+    font-family: EB Garamond;
+    display: block;
     float: left;
-    font-size: 68px; 
-    font-weight: 700;
+    font-size: 48px;
+    font-weight: 800;
+    width: 400px;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #fafcea;
 }
 
-#fixedpart {
-    background-color: #91766f;
-    opacity: 0,5;
+#navmenu {
+    font-family: EB Garamond;
+    display:list-item;
+    font-weight: 400;
+    margin-left: 400px;
+    padding-top: 10px;
+    text-align: center;
+    
+    
+
+}
+    
+.menubutton {
+    font-family: EB Garamond;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fafcea;
 }
 
+#weltext {
+    font-family: EB Garamond;
+    margin-top: 190px;
+    text-align: center;
+}
+
+
+h2 {
+    font-family: EB Garamond;
+    font-size: 36px;
+}
+
+section#weltext p {
+    font-family: EB Garamond;
+    font-size: 24px;
+    padding-top: 50px;
+} 
