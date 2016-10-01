@@ -1,0 +1,23 @@
+* {
+    margin: 0 auto;
+    max-width: 970px;
+}
+
+header {
+    
+}
+
+#name {
+    display: flex;
+    font-family: 'Open Sans, sans-serif';
+    background-color: yellow;
+}
+
+#navmenu {
+    background-color: red;
+    display: flex;
+    justify-content: flex-end;
+
+    font-family: 'Open Sans, sans-serif';
+    
+}
