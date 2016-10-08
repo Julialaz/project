@@ -6,29 +6,27 @@
         <title>Website of Iuliia Lazurkevych</title>
     </head>
     <body>
-        
 <!--page1-->
-
-        <div id=firstpage><!--done-->
+        <div class=firstpage>
             <header>
-                <h1 id="name">Iuliia Lazurkevych</h1><!--DONE-->
-                <nav id="navmenu"><!--DONE--except class navsigation-->
-                    <a href="" class="navigation">MAIN</a>
-                    <a href="" class="navigation">ABOUT</a>
-                    <a href="" class="navigation">SKILLS</a>
-                    <a href="" class="navigation">CONTACT</a>
+                <h1 id="name">Iuliia Lazurkevych</h1>
+                <nav class="navmenu">
+                    <a href="">main</a>
+                    <a href="">about</a>
+                    <a href="">skills</a>
+                    <a href="">contact</a>
                 </nav>
             </header>
-            <section class="welcometext"><!--should be flexstart-->
-                <h2 id="welcome">Welcome to my personal wesite</h2><!--not done id welcome-->
+            <section class="welcometext">
+                <h2>Welcome to my personal website</h2>
                 <p>Let me wish you a warm welcome to my personal website<br>
                 Here you can find information about me and my interests<br></p>
             </section>
         </div>
  <!--page2-->
-        <img src="" alt="">
-        <section id="aboutmyself">
-            <h3>A few facts about myself</h3>
+        <div class="clear"></div>
+        <section class="aboutmyself">
+            <h3 class="heading">A few facts about myself</h3>
             <p>
                 Hello, my name is Iuliia. I have a British shorthair straight cat named Asja,<br>
                 I like frappe, my favorite food is chocolate, my favourite sport is skiing. <br>
@@ -36,30 +34,41 @@
                 I'm going to continue to do it. If you're having fun, then everything else will come easy to you.<br>
             </p>
         </section>
-        <div id=images>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+        <div class="clear"></div>
+            <div id=imageblock>
+            <img src="frappe.jpg" alt="Frappe" width="320px" height="400px">
+            <img src="skiing.jpg" alt="Skiing" width="320px" height="400px">
+            <img src="britishcat.jpg" alt="British cat" width="320px" height="400px">
         </div>
 <!--page 3-->
-        <section>
-            <h3>Personal Skills</h3>
-            
-            <h3>Education</h3>
-            <ul>
-                <li>September-October 2016 – SoftServe IT Academy HTML5/ CSS3/ JavaScript Fundamentals course</li>
-                <li>2012 – 2013 – National University «Lviv Polytechnic», Accountingand Audit, Master’s degree</li>
-                <li>2008 – 2012 – National Forestry University of Ukraine, Accounting and Audit, Bachelor’s degree</li>
+        <div class="clear"></div>
+        <section class=skillsblock>
+            <h3 class="skillname">Skills</h3>
+            <ul class="skilldescription">
+                <li>HTML5;</li>
+                <li>CSS3;</li>
+                <li>JavaScript.</li>
+            </ul>
+            <h3 class="skillname">Education</h3>
+            <ul class="skilldescription">
+                <li>September-October 2016 – SoftServe IT Academy HTML5/ CSS3/ JavaScript Fundamentals course;</li>
+                <li>2012 – 2013 – National University «Lviv Polytechnic», Accounting and Audit, Master’s degree;</li>
+                <li>2008 – 2012 – National Forestry University of Ukraine, Accounting and Audit, Bachelor’s degree.</li>
+            </ul>
+            <h3 class="skillname">Personal Skills</h3>
+            <ul class="skilldescription">
+                <li>Responsible, motivated, organized, eager to learn new things.</li>
             </ul>
         </section>
+        <div class="clear"></div>
 <!--page 4-->
-        <section id="contacttext">
-                <h3 id="contactheading">Contact me</h3>
+        <div class="contactblock">
+        <section class="contacttext">
+                <h3 class="heading">Contact me</h3> 
                 <p>Please feel free to reach out to me if you have any questions or comments.<br>
                 Also, you could always just send me a friendly hello.</p>
         </section>
-        <section>
+        <section class="contactform">
             <form action="https://formspree.io/lazurkevich@yahoo.com" method="POST">
                 <p>I always like to know who I'm speaking with.</p><br>
                 <label for="firstname">First Name:</label><br>
@@ -69,15 +78,22 @@
                 <label for="email">Email Address:</label><br>
                 <input type="email" name="email" id="email" required><br>
                 <label for="comments">Your Message:</label><br>
-                <textarea name="comments" placeholder="Send something awesome to my inbox." rows="8" cols="50" required></textarea><br>
+                <textarea name="comments" placeholder="Send something awesome to my inbox." rows="8" cols="40" required></textarea><br>
                 <input type="submit" name="submit" value="Send">
                 <input type="reset" name="reset" value="Reset">
             </form>
         </section>
-        <footer>
-            <nav>
-                
+        </div>
+        <div class="clear"></div>
+        <footer class="footer">
+            <h3 id="namefooter">Iuliia Lazurkevych</h3>
+            <nav id="navfooter"> 
+                <a href="">main</a>
+                <a href="">about</a>
+                <a href="">skills</a>
+                <a href="">contact</a>
             </nav>
+            <a href="" id="copyright">&copy; Iullia Lazurkevych 2016</a>
         </footer>
     </body>
 </html>

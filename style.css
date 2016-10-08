@@ -1,60 +1,211 @@
-/* * {
+* {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 980px;
 }
 
-#firstpage {
-    background-image: url(keyboard-690066_960_720.jpg);
-    height: 610px;
-    width: 960px;
+.clear{
+    clear:left;
+    height: 50px;
+    background-color: #e5e3e3;
+}
+
+.firstpage {
+    background-image:url(firstpage.jpg);
+    width: 100%;
+    height: 854px;
+    background-size: cover; 
 }
 
 #name {
-    font-family: EB Garamond;
-    display: block;
-    float: left;
-    font-size: 48px;
-    font-weight: 800;
-    width: 400px;
-    padding-left: 20px;
-    padding-top: 10px;
-    color: #fafcea;
+    font-family: 'Open Sans, sans-serif';
+    font-size: 40px;
+    font-weight: 900;
+    color: #e8e8ed;
+    padding-left: 4%;
+    padding-top: 1%;
+    letter-spacing: 5px;
+    word-spacing: 20px;
 }
 
 #navmenu {
-    font-family: EB Garamond;
-    display:list-item;
+    font-family: 'Open Sans, sans-serif';
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-right: 0;
+    padding-top: 1%;
+    width: 55%;
+    float: right;
+    word-spacing: 50px;
+}
+
+a:hover{
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    color: #e8e8ed; 
     font-weight: 400;
-    margin-left: 400px;
-    padding-top: 10px;
+}
+
+
+.welcometext {
+    font-family: 'Open Sans, sans-serif';
+    float: left;
+    margin-top: 15%;
+    margin-left: 1%;
+    width: 39%;
     text-align: center;
-    
-    
+    color: #e8e8ed;
+    line-height: 200%;
 
 }
-    
-.menubutton {
-    font-family: EB Garamond;
-    font-size: 24px;
-    font-weight: 600;
-    color: #fafcea;
-}
 
-#weltext {
-    font-family: EB Garamond;
-    margin-top: 190px;
-    text-align: center;
+section.welcometext p {
+    padding-top: 5%;
+    font-size: 22px;
 }
-
 
 h2 {
-    font-family: EB Garamond;
-    font-size: 36px;
+    font-size: 32px;
+    font-weight: 900;
 }
 
-section#weltext p {
-    font-family: EB Garamond;
-    font-size: 24px;
-    padding-top: 50px;
-} 
-*/
+/*page 2*/
+
+.aboutmyself {
+    font-family: 'Open Sans, sans-serif';
+    letter-spacing: 2px;
+    text-align: center;
+    color: #474140;
+    font-size: 18px;
+    background-color: #e5e3e3;
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    padding-top: 50px; 
+    line-height: 170%;
+}
+
+.heading {
+    padding-bottom: 3%;
+}
+
+
+
+.image {
+    height: 350px;
+    width: 320px;
+    display: inline-block;
+
+}
+
+/*page 3*/
+
+ul {
+    list-style-type: none;
+}
+
+.skillname {
+    font-family: 'Open Sans, sans-serif';
+    height: 100%;
+    letter-spacing: 1px;
+    font-size: 22px;
+    color: #474140;
+    line-height: 170%;
+    text-transform: uppercase;
+    text-align: left;
+    background-color: #d6d6d6;
+    padding-left: 3%;
+}
+
+.skilldescription {
+    font-family: 'Open Sans, sans-serif';
+    height: 100%;
+    letter-spacing: 1px;
+    color: #474140;
+    font-size: 18px;
+    line-height: 170%;
+    box-sizing: border-box;
+    background-color: #e5e3e3;
+    padding-left: 3%;
+
+}
+
+
+
+
+
+/*page 4*/
+
+.contacttext {
+    font-family: 'Open Sans, sans-serif';
+    color: #474140;
+    text-align: center;
+    letter-spacing: 1px;
+    width: 50%;
+    height: 500px;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 5%;
+    padding-right: 20%;
+    padding-left: 5%;
+    line-height: 170%;
+    background-color: #e5e3e3;
+    font-size: 18px;
+
+}
+
+.contactform {
+    font-family: 'Open Sans, sans-serif';
+    color: #474140;
+    width: 50%;
+    height: 500px;
+    padding-top: 5%;
+    float: right;
+    box-sizing:border-box;
+    letter-spacing: 1px;
+    line-height: 150%;
+    text-align: left;
+    background-color: #e5e3e3;
+    font-size: 18px;
+
+}
+    
+.footer {
+    font-family: 'Open Sans, sans-serif';
+    font-size: 18px;
+    letter-spacing: 2px;
+    word-spacing: 50px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 20px;
+    background-color: #4f4b4b;
+    position: relative;
+}
+
+#namefooter {
+    padding-bottom: 3%;
+    color: #e8e8ed;
+    box-sizing: border-box;
+    word-spacing: 20px;
+
+}
+
+#copyright {
+    font-size: 10px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: 50px;
+
+}
+    
+
+
+
+
+
+
