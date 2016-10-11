@@ -1,62 +1,46 @@
-// JavaScript File$( document ).ready(function() {
+/*global $*/
 
-    scaleVideoContainer();
+$(document).ready(function(){
 
-    initBannerVideoSize('.video-container .poster img');
-    initBannerVideoSize('.video-container .filter');
-    initBannerVideoSize('.video-container video');
+	// = Добавляем ссылку наверх к заголовку
+	//$('h2').append('<a href="#header"></a>');
 
-    $(window).on('resize', function() {
-        scaleVideoContainer();
-        scaleBannerVideoSize('.video-container .poster img');
-        scaleBannerVideoSize('.video-container .filter');
-        scaleBannerVideoSize('.video-container video');
-    });
+	// = Вешаем событие прокрутки к нужному месту
+	//	 на все ссылки якорь которых начинается на #
+	$('a[href^="#"]').bind('click.smoothscroll',function (e) {
+		e.preventDefault();
+
+		var target = this.hash,
+		$target = $(target);
+
+		$('html, body').stop().animate({
+			'scrollTop': $target.offset().top
+		}, 2500, 'swing', function () {
+			window.location.hash = target;
+		});
+	});
 
 });
 
-function scaleVideoContainer() {
+$(function () {
+    $('#send').click(function(e) {
+        e.preventDefault();
+        $.ajax({
+            url: "https://formspree.io/lazurkevich@yahoo.com", 
+            method: "POST",
+            data: {
+            	firstname: $('#firstname').val(),
+            	secondname: $('#secondname').val(),
+                email: $('#email').val(),
+                message: $('#massage').val()
+            },
+            dataType: "json"
+        }).done(function() {
+            $('form').html('<h4><center>Thank you for reaching out! </br> Your message has been successfully sent. </br> I will contact you very soon!</center></h4>')
+        }).fail(function(xhr, err) {
+            $('form').html(xhr.statusText);
+        });        
+    })
+});
 
-    var height = $(window).height() + 5;
-    var unitHeight = parseInt(height) + 'px';
-    $('.homepage-hero-module').css('height',unitHeight);
 
-}
-
-function initBannerVideoSize(element){
-
-    $(element).each(function(){
-        $(this).data('height', $(this).height());
-        $(this).data('width', $(this).width());
-    });
-
-    scaleBannerVideoSize(element);
-
-}
-
-function scaleBannerVideoSize(element){
-
-    var windowWidth = $(window).width(),
-    windowHeight = $(window).height() + 5,
-    videoWidth,
-    videoHeight;
-
-    console.log(windowHeight);
-
-    $(element).each(function(){
-        var videoAspectRatio = $(this).data('height')/$(this).data('width');
-
-        $(this).width(windowWidth);
-
-        if(windowWidth < 1000){
-            videoHeight = windowHeight;
-            videoWidth = videoHeight / videoAspectRatio;
-            $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
-
-            $(this).width(videoWidth).height(videoHeight);
-        }
-
-        $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
-
-    });
-}

@@ -2,41 +2,31 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet"> 
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" media="(max-width:320px)" href="indexmin.css">
         <title>Website of Iuliia Lazurkevych</title>
     </head>
     <body>
 <!--page1-->
-        <div class=firstpage>
+        <div class=firstpage id="main">
             <header>
-                <h1 id="name">Iuliia Lazurkevych</h1>
                 <nav class="navmenu">
-                    <a href="">main</a>
-                    <a href="">about</a>
-                    <a href="">skills</a>
-                    <a href="">contact</a>
+                    <a href="#main">main</a>
+                    <a href="#about">about</a>
+                    <a href="#skills">skills</a>
+                    <a href="#contact">contact</a>
                 </nav>
+                <h1 id="name">Iuliia Lazurkevych</h1>
             </header>
             <section class="welcometext">
                 <h2>Welcome to my personal website</h2>
                 <p>Let me wish you a warm welcome to my personal website<br>
                 Here you can find information about me and my interests<br></p>
             </section>
-        </div><!---->
-        <div class="homepage-hero-module">
-    <div class="video-container">
-        <div class="filter"></div>
-        <video autoplay loop class="fillWidth">
-            <source src="Noted.mp4" type="video/mp4" />
-            <source src="Noted.mp4" type="video/webm" />
-        </video>
-        <div class="poster hidden">
-            <img src="Noted.mp4" alt="">
         </div>
-    </div>
-</div><!---->
  <!--page2-->
-        <div class="clear"></div>
+        <div class="clear" id="about"></div>
         <section class="aboutmyself">
             <h3 class="heading">A few facts about myself</h3>
             <p>
@@ -48,12 +38,12 @@
         </section>
         <div class="clear"></div>
             <div id=imageblock>
-            <img src="frappe.jpg" alt="Frappe" width="320px" height="400px">
-            <img src="skiing.jpg" alt="Skiing" width="320px" height="400px">
-            <img src="britishcat.jpg" alt="British cat" width="320px" height="400px">
+            <img src="frappe.jpg" alt="Frappe" class="image">
+            <img src="skiing.jpg" alt="Skiing" class="image">
+            <img src="britishcat.jpg" alt="British cat" class="image">
         </div>
 <!--page 3-->
-        <div class="clear"></div>
+        <div class="clear" id="skills"></div>
         <section class=skillsblock>
             <h3 class="skillname">Skills</h3>
             <ul class="skilldescription">
@@ -72,7 +62,7 @@
                 <li>Responsible, motivated, organized, eager to learn new things.</li>
             </ul>
         </section>
-        <div class="clear"></div>
+        <div class="clear" id="contact"></div>
 <!--page 4-->
         <div class="contactblock">
         <section class="contacttext">
@@ -81,33 +71,36 @@
                 Also, you could always just send me a friendly hello.</p>
         </section>
         <section class="contactform">
-            <form action="https://formspree.io/lazurkevich@yahoo.com" method="POST">
-                <p>I always like to know who I'm speaking with.</p><br>
+            <h4>I always like to know who I'm speaking with.</h4><br>
+            <form>
                 <label for="firstname">First Name:</label><br>
                 <input type="text" name="firstname" id="firstname" required><br>
                 <label for="secondname">Second Name:</label><br>
                 <input type="text" name="secondname" id="secondname" required><br>
                 <label for="email">Email Address:</label><br>
                 <input type="email" name="email" id="email" required><br>
-                <label for="comments">Your Message:</label><br>
-                <textarea name="comments" placeholder="Send something awesome to my inbox." rows="8" cols="40" required></textarea><br>
-                <input type="submit" name="submit" value="Send">
-                <input type="reset" name="reset" value="Reset">
+                <label for="message">Your Message:</label><br>
+                <textarea name="message" id="message" placeholder="Send something awesome to my inbox." rows="8" cols="40" required></textarea><br>
+                <input type="submit" name="submit" value="Send" class="formbutton" id="send">
+                <input type="reset" name="reset" value="Reset" class="formbutton">
             </form>
         </section>
         </div>
         <div class="clear"></div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164705.55779709644!2d23.872152863506166!3d49.832604593109124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2sLviv%2C+Lviv+Oblast!5e0!3m2!1sen!2sua!4v1475962892897"  allowfullscreen></iframe>
+        </div>
         <footer class="footer">
             <h3 id="namefooter">Iuliia Lazurkevych</h3>
             <nav id="navfooter"> 
-                <a href="">main</a>
-                <a href="">about</a>
-                <a href="">skills</a>
-                <a href="">contact</a>
+                <a href="#main">main</a>
+                <a href="#about">about</a>
+                <a href="#skills">skills</a>
+                <a href="#contact">contact</a>
             </nav>
-            <a href="" id="copyright">&copy; Iullia Lazurkevych 2016</a>
+            <a href="https://github.com/Julialaz/project" id="copyright">&copy; Iullia Lazurkevych 2016</a>
         </footer>
-        <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="index.js"></script>
     </body>
 </html>
