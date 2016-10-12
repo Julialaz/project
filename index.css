@@ -173,12 +173,12 @@ ul {
 
 input {
     border: #474140 1px solid;
-    width: 200px;
+    width: 300px;
     height: 25px;
 }
 
 textarea {
-    width: 350px;
+    width: 300px;
     height: 150px;
     border: #474140 1px solid;
 }

@@ -1,0 +1,233 @@
+
+                                                            /*universal*/
+* {
+    margin: 0 auto;
+    max-width: 980px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.clear{
+    clear:left;
+    height: 50px;
+    background-color: #e5e3e3;
+}
+
+.heading {
+    padding-bottom: 3%;
+}
+                                                                /*page1*/
+
+.firstpage {
+    background-image:url(pondering.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #464646;
+    height: 750px;
+}
+
+#name {
+    font-size: 50px;
+    font-weight: 900;
+    color: #eae3ea;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-top: 2%;
+    word-spacing: 20px;
+    display: flex;
+    letter-spacing: 5px;
+}
+
+.navmenu {
+    font-size: 20px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin-right: 0;
+    padding-top: 3%;
+    width: 40%;
+    text-transform: uppercase;
+}
+
+a:hover {
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    color: #eae3ea;
+    font-weight: 400;
+}
+
+.welcometext {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 10%;
+    margin-left: 1%;
+    width: 40%;
+    text-align: center;
+    color: #eae3ea;
+    line-height: 200%;
+}
+
+section.welcometext p{
+    padding-top: 5%;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 900;
+}
+                                                                /*page 2*/
+.aboutmyself {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #474140;
+    font-size: 18px;
+    background-color: #e5e3e3;
+    line-height: 170%;
+}
+
+/*---------------------------------*/
+.image {
+    width: 320px; 
+    height: 390px;
+    margin: 0;
+}
+
+#imageblock {
+    display: flex;
+    flex-flow:column nowrap;
+    background-color: #e5e3e3;
+    justify-content: center;
+}
+                                                                /*page 3*/
+
+/*---------------------------------*/
+ul {
+    list-style-type: none;
+}
+
+.skillsblock {
+    display: flex;
+    flex-flow: column nowrap;
+    line-height: 170%;
+    letter-spacing: 1px;
+    color: #474140;
+    background-color: #e5e3e3;
+}
+
+.skillname {
+    font-size: 22px;
+    text-transform: uppercase;
+    width: 30%;
+    box-sizing: border-box;
+    margin-left: 0;
+    padding-left: 3%;
+}
+
+.skilldescription {
+    font-size: 18px;
+    width: 70%;
+    margin-right: 0;
+    box-sizing: border-box;
+}
+                                                            /*page4*/
+
+/*---------------------------------*/
+
+.contactblock {
+    background-color: #e5e3e3;
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+}
+
+.contacttext {
+    color: #474140;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    padding: 10% 15% 15% 5%;
+    line-height: 170%;
+    font-size: 18px;
+    text-align: center;
+    width: 60%;
+}
+
+.contactform {
+    color: #474140;
+    padding-top: 5%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    line-height: 150%;
+    font-size: 18px;
+    text-align: left;
+    width: 40%;
+}
+    
+.contactform h4 {
+    text-align: center
+}
+
+input {
+    border: #474140 1px solid;
+    width: 300px;
+    height: 25px;
+}
+
+textarea {
+    width: 300px;
+    height: 150px;
+    border: #474140 1px solid;
+}
+
+.formbutton {
+    width: 100px;
+    font-size: 15px;
+}
+
+iframe {
+    width: 980px;
+    height: 300px;
+    border: 0;
+}
+
+/*---------------------------------*/
+    
+.footer {
+    height: 110px;
+    background-color: #a7b3a5;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+
+#navfooter {
+    font-size: 18px;
+    letter-spacing: 2px;
+    word-spacing: 50px;
+    text-transform: uppercase;
+}
+
+#namefooter {
+    color: #e8e8ed;
+    word-spacing: 20px;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+#copyright {
+    font-size: 15px;
+    letter-spacing: normal;
+    word-spacing: normal;
+   
+}
+    
+/*---------------------------------*/
+
+    
