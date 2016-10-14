@@ -242,10 +242,6 @@ textarea {
     width: 100%;
 }
 
-::-webkit-input-placeholder {
-    letter-spacing: 2px;
-}
-
 .formbutton {
     width: 30%;
     height: 35px;
