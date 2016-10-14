@@ -2,21 +2,23 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet"> 
         <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" media="(max-width:620px)" href="index-sm.css">
+        <link rel="stylesheet" media="(max-width:800px)" href="indexmin.css">
         <title>Website of Iuliia Lazurkevych</title>
     </head>
     <body>
-<!--page1-->
         <div class=firstpage id="main">
-            <header>
+            <div class="menu">
                 <nav class="navmenu">
                     <a href="#main">main</a>
                     <a href="#about">about</a>
                     <a href="#skills">skills</a>
-                    <a href="#contact">contact</a>
+                    <div id="contactbutton"><a href="#contact">contact</a></div>
                 </nav>
+            </div>
+            <header>
                 <h1 id="name">Iuliia Lazurkevych</h1>
             </header>
             <section class="welcometext">
@@ -25,15 +27,15 @@
                 Here you can find information about me and my interests<br></p>
             </section>
         </div>
- <!--page2-->
         <div class="clear" id="about"></div>
         <section class="aboutmyself">
             <h3 class="heading">A few facts about myself</h3>
             <p>
                 Hello, my name is Iuliia. I have a British shorthair straight cat named Asja,<br>
-                I like frappe, my favorite food is chocolate, my favourite sport is skiing. <br>
-                I am skiing for 20 years and I'm still having fun and as long as skiing is enjoyable, <br>
-                I'm going to continue to do it. If you're having fun, then everything else will come easy to you.<br>
+                I like frappe, my favorite food is chocolate, my favourite sport is skiing.<br>
+                I am skiing for 20 years. As long as skiing is enjoyable, I'm going to continue to do it.<br>
+                I am interested in front-end web development and having fun learning it.<br>
+                If you're having fun, then everything else will come easy to you.<br>
             </p>
         </section>
         <div class="clear"></div>
@@ -42,20 +44,22 @@
             <img src="skiing.jpg" alt="Skiing" class="image">
             <img src="britishcat.jpg" alt="British cat" class="image">
         </div>
-<!--page 3-->
         <div class="clear" id="skills"></div>
         <section class=skillsblock>
             <h3 class="skillname">Skills</h3>
             <ul class="skilldescription">
                 <li>HTML5;</li>
                 <li>CSS3;</li>
-                <li>JavaScript.</li>
+                <li>JavaScript;</li>
+                <li>JQuery;</li>
+                <li>AJAX;</li>
+                <li>Bootstrap.</li>
             </ul>
             <h3 class="skillname">Education</h3>
             <ul class="skilldescription">
-                <li>September-October 2016 – SoftServe IT Academy HTML5/ CSS3/ JavaScript Fundamentals course;</li>
-                <li>2012 – 2013 – National University «Lviv Polytechnic», Accounting and Audit, Master’s degree;</li>
-                <li>2008 – 2012 – National Forestry University of Ukraine, Accounting and Audit, Bachelor’s degree.</li>
+                <li><span>September-October 2016</span><br>SoftServe IT Academy HTML5/ CSS3/ JavaScript Fundamentals course;</li>
+                <li><span>2012 – 2013</span><br>National University «Lviv Polytechnic», Accounting and Audit, Master’s degree;</li>
+                <li><span>2008 – 2012</span><br>National Forestry University of Ukraine, Accounting and Audit, Bachelor’s degree;</li>
             </ul>
             <h3 class="skillname">Personal Skills</h3>
             <ul class="skilldescription">
@@ -63,44 +67,70 @@
             </ul>
         </section>
         <div class="clear" id="contact"></div>
-<!--page 4-->
         <div class="contactblock">
         <section class="contacttext">
                 <h3 class="heading">Contact me</h3> 
-                <p>Please feel free to reach out to me if you have any questions or comments.<br>
-                Also, you could always just send me a friendly hello.</p>
+                <p>Please feel free to reach out to me if you have any questions or comments.<br>Also, you could always just send me a friendly hello.</p>
+                <div class="contactinfo">
+                    <h3>Contact information</h3>
+                    <p>Iuliia Lazurkevych</p>
+                    <p>Ukraine. Lviv</p>
+                    <p><i class="fa fa-envelope-o" aria-hidden="true"></i> lazurkevich@yahoo.com</p>
+                    <p><i class="fa fa-mobile" aria-hidden="true"></i> +380973152359</p>
+                    <div class="socialcontact">
+                        <a href="https://www.facebook.com/julia.lazurkevych" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+                        <a href="https://ua.linkedin.com/in/iuliia-lazurkevych-285b2812b" target="_blank"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+                        <a href="https://github.com/julialaz" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
         </section>
         <section class="contactform">
             <h3>I always like to know who I'm speaking with.</h3><br>
             <form>
-                <label for="firstname">First Name:</label><br>
-                <input type="text" name="firstname" id="firstname" required><br>
-                <label for="secondname">Second Name:</label><br>
-                <input type="text" name="secondname" id="secondname" required><br>
-                <label for="email">Email Address:</label><br>
-                <input type="email" name="email" id="email" required><br>
-                <label for="message">Your Message:</label><br>
-                <textarea name="message" id="message" placeholder="Send something awesome to my inbox." rows="8" cols="40" required></textarea><br>
-                <input type="submit" name="submit" value="Send" class="formbutton" id="send">
-                <input type="reset" name="reset" value="Reset" class="formbutton">
+                <ul>
+                    <li>
+                        <label for="firstname" class="required">First Name:</label><br>
+                        <input type="text" name="firstname" id="firstname" required><br>
+                    </li>
+                    <li>
+                        <label for="secondname" class="required">Second Name:</label><br>
+                        <input type="text" name="secondname" id="secondname" required><br>
+                    </li>
+                    <li>
+                        <label for="email" class="required">Email Address:</label><br>
+                        <input type="email" name="email" id="email" required><br>
+                    </li>
+                    <li>
+                        <label for="message" class="required">Your Message:</label><br>
+                        <textarea name="message" id="message" placeholder="Send something awesome to my inbox." rows="8" cols="40" required></textarea><br>
+                    </li>
+                    <li>
+                        <input type="submit" name="submit" value="Send" class="formbutton" id="send">
+                    </li>
+                    <li id="textbelowform">Fields marked with an asterisk (<span class="required"></span>) are required to fill in!</li>
+                </ul>
             </form>
         </section>
         </div>
         <div class="clear"></div>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164705.55779709644!2d23.872152863506166!3d49.832604593109124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2sLviv%2C+Lviv+Oblast!5e0!3m2!1sen!2sua!4v1475962892897"  allowfullscreen></iframe>
-        </div>
+        <div id="map"></div>
         <footer class="footer">
-            <h3 id="namefooter">Iuliia Lazurkevych</h3>
-            <nav id="navfooter"> 
+            <h3 class="namefooter">Iuliia Lazurkevych</h3>
+            <nav class="navfooter"> 
                 <a href="#main">main</a>
                 <a href="#about">about</a>
                 <a href="#skills">skills</a>
                 <a href="#contact">contact</a>
             </nav>
-            <a href="https://github.com/Julialaz/project" id="copyright">&copy; Iullia Lazurkevych 2016</a>
+            <a href="https://github.com/Julialaz/project"  target="_blank" id="copyright">&copy; Iullia Lazurkevych 2016</a>
+            <div class="socialfooter">
+                <a href="https://www.facebook.com/julia.lazurkevych" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+                <a href="https://ua.linkedin.com/in/iuliia-lazurkevych-285b2812b" target="_blank"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+                <a href="https://github.com/julialaz" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+            </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="index.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwVysCrLlGRvtH34ImGCD7OqZNCKCHLUk&callback=initMap"></script>
     </body>
 </html>

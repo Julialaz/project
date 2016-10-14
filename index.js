@@ -1,26 +1,18 @@
 /*global $*/
+/*global google*/
 
-$(document).ready(function(){
-
-	// = Добавляем ссылку наверх к заголовку
-	//$('h2').append('<a href="#header"></a>');
-
-	// = Вешаем событие прокрутки к нужному месту
-	//	 на все ссылки якорь которых начинается на #
 	$('a[href^="#"]').bind('click.smoothscroll',function (e) {
-		e.preventDefault();
-
-		var target = this.hash,
-		$target = $(target);
-
-		$('html, body').stop().animate({
-			'scrollTop': $target.offset().top
-		}, 2500, 'swing', function () {
-			window.location.hash = target;
-		});
-	});
-
-});
+ e.preventDefault();
+ 
+var target = this.hash,
+ $target = $(target);
+ 
+$('html, body').stop().animate({
+ 'scrollTop': $target.offset().top
+ }, 2000, 'swing', function () {
+ window.location.hash = target;
+ });
+ });
 
 $(function () {
     $('#send').click(function(e) {
@@ -32,7 +24,7 @@ $(function () {
             	firstname: $('#firstname').val(),
             	secondname: $('#secondname').val(),
                 email: $('#email').val(),
-                message: $('#massage').val()
+                message: $('#message').val()
             },
             dataType: "json"
         }).done(function() {
@@ -43,4 +35,24 @@ $(function () {
     })
 });
 
+ function initMap() {
+        var uluru = {lat: 49.85, lng: 24.0166666667};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+      
+var num = 730; 
 
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > num) {
+        $('.menu').addClass('fixed');
+    } else {
+        $('.menu').removeClass('fixed');
+    }
+});
