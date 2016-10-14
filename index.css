@@ -1,11 +1,10 @@
-                                                            /*universal*/
 * {
     margin: 0 auto;
     max-width: 980px;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.clear{
+.clear {
     height: 100px;
     width: 100%;
     background-color: #e5e3e3;
@@ -16,7 +15,7 @@
 }
 
 .firstpage {
-    background-image:url(pondering.jpg);
+    background-image: url(pondering.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -47,7 +46,6 @@
     padding-top: 1%;
     width: 45%;
     text-transform: uppercase;
-    
 }
 
 .menu {
@@ -79,7 +77,6 @@ a {
     width: 20%;
     height: auto;
     text-align: center;
-   
 }
 
 #contactbutton:hover {
@@ -98,7 +95,7 @@ a {
     line-height: 200%;
 }
 
-section.welcometext p{
+section.welcometext p {
     padding-top: 5%;
     font-size: 20px;
 }
@@ -129,7 +126,6 @@ h2 {
     margin: 0 0 0 0;
 }
 
-
 #imageblock {
     display: flex;
     justify-content: space-between;
@@ -140,7 +136,7 @@ h2 {
 
 ul {
     list-style-type: none;
-    list-style-position:outside;
+    list-style-position: outside;
 }
 
 .skillsblock {
@@ -223,7 +219,7 @@ li span {
     text-align: left;
     width: 50%;
 }
-    
+
 .contactform h3 {
     font-weight: normal;
     font-size: 18px;
@@ -232,7 +228,7 @@ li span {
 }
 
 .required:after {
-    content:" *";
+    content: " *";
     color: red;
 }
 
@@ -240,9 +236,10 @@ form {
     width: 80%;
 }
 
-input, textarea {
+input,
+textarea {
     border: 1px solid #c4c4c4;
-    width:100%;
+    width: 100%;
 }
 
 ::-webkit-input-placeholder {
@@ -253,7 +250,7 @@ input, textarea {
     width: 30%;
     height: 35px;
     font-size: 15px;
-    border-color: #474545; 
+    border-color: #474545;
     color: #474545;
 }
 
@@ -287,7 +284,6 @@ form li {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
-
 }
 
 .navfooter {
@@ -324,7 +320,7 @@ form li {
     width: 20%;
     justify-content: space-between;
 }
-  
+
 .socialfooter a {
     color: #eae3ea;
 }

@@ -5,23 +5,23 @@
 
 #imageblock {
     display: flex;
-    flex-flow:column nowrap;
+    flex-flow: column nowrap;
     align-items: center;
 }
-                                                        
+
 .skillsblock {
     flex-flow: column nowrap;
 }
 
-.skillname, .skilldescription {
+.skillname,
+.skilldescription {
     width: 100%;
-}                                                                  
+}
 
 .contactblock {
     width: 100%;
-    flex-flow:column nowrap;
+    flex-flow: column nowrap;
     align-items: center;
-    
 }
 
 .contacttext {
@@ -31,9 +31,3 @@
 .contactform {
     width: 100%;
 }
-
-
-
-
-
-
