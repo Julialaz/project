@@ -36,16 +36,16 @@ $(function() {
 });
 
 function initMap() {
-    var uluru = {
+    var lviv = {
         lat: 49.85,
         lng: 24.0166666667
     };
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 10,
-        center: uluru
+        center: lviv
     });
     var marker = new google.maps.Marker({
-        position: uluru,
+        position: lviv,
         map: map
     });
 }
