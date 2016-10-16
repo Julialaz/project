@@ -28,6 +28,12 @@
     width: 100%;
 }
 
+.contactform h3 {
+    width: 100%;
+    padding-left: 7%;
+}
+
 .contactform {
     width: 100%;
+    padding-right: 7%;
 }

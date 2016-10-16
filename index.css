@@ -272,7 +272,7 @@ form li {
     border: 0;
 }
 
-.footer {
+footer {
     height: 150px;
     padding: 15px 0px 15px 0px;
     width: 100%;
@@ -285,8 +285,10 @@ form li {
 .navfooter {
     font-size: 18px;
     letter-spacing: 2px;
-    word-spacing: 50px;
     text-transform: uppercase;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navfooter a {

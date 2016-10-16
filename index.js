@@ -1,6 +1,9 @@
 /*global $*/
 /*global google*/
 
+$(document).ready(function() {
+
+
 $('a[href^="#"]').bind('click.smoothscroll', function(e) {
     e.preventDefault();
 
@@ -35,6 +38,13 @@ $(function() {
     })
 });
 
+
+
+
+
+
+
+
 function initMap() {
     var lviv = {
         lat: 49.85,
@@ -59,4 +69,29 @@ $(window).bind('scroll', function() {
     else {
         $('.menu').removeClass('fixed');
     }
+});
+
+
+$('form').validate();
+
+
+/*$(document).ready(function() {
+    $('form').validate({
+        rules: {
+            firstname: "required",
+            lastname: "required",
+            email: "required",
+            message: "required"
+        },
+        messages: {
+            firstname: "Please enter your first name",
+            lastname: "Please enter your last name",
+            email: "Please enter your email address",
+            message: "Please enter your messagee"
+        }
+    });
+
+});*/
+
+
 });

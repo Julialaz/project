@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" media="(max-width:800px)" href="indexmin.css">
     <title>Website of Iuliia Lazurkevych</title>
 </head>
+
 <body>
     <div class=firstpage id="main">
         <div class="menu">
@@ -90,8 +92,8 @@
                         <input type="text" name="firstname" id="firstname" required><br>
                     </li>
                     <li>
-                        <label for="secondname" class="required">Second Name:</label><br>
-                        <input type="text" name="secondname" id="secondname" required><br>
+                        <label for="lastname" class="required">Last Name:</label><br>
+                        <input type="text" name="lastname" id="lastname" required><br>
                     </li>
                     <li>
                         <label for="email" class="required">Email Address:</label><br>
@@ -111,7 +113,7 @@
     </div>
     <div class="clear"></div>
     <div id="map"></div>
-    <footer class="footer">
+    <footer>
         <h3 class="namefooter">Iuliia Lazurkevych</h3>
         <nav class="navfooter">
             <a href="#main">main</a>
@@ -127,7 +129,13 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+     
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/additional-methods.min.js"></script>
+   
+   <script src="jquery.validate.js"></script>
     <script type="text/javascript" src="index.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwVysCrLlGRvtH34ImGCD7OqZNCKCHLUk&callback=initMap"></script>
 </body>
+
 </html>
