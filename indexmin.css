@@ -37,3 +37,9 @@
     width: 100%;
     padding-right: 7%;
 }
+
+.navfooter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
