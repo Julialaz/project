@@ -1,9 +1,6 @@
 /*global $*/
 /*global google*/
 
-$(document).ready(function() {
-
-
 $('a[href^="#"]').bind('click.smoothscroll', function(e) {
     e.preventDefault();
 
@@ -20,6 +17,13 @@ $('a[href^="#"]').bind('click.smoothscroll', function(e) {
 $(function() {
     $('#send').click(function(e) {
         e.preventDefault();
+        if (($('#firstname').val() == '') ||
+            ($('#secondname').val() == '') ||
+            ($('#email').val() == '') ||
+            ($('#message').val()) == '') {
+            alert('Please fill in all required fields!');
+            return;
+        }
         $.ajax({
             url: "https://formspree.io/lazurkevich@yahoo.com",
             method: "POST",
@@ -37,12 +41,6 @@ $(function() {
         });
     })
 });
-
-
-
-
-
-
 
 
 function initMap() {
@@ -72,26 +70,3 @@ $(window).bind('scroll', function() {
 });
 
 
-$('form').validate();
-
-
-/*$(document).ready(function() {
-    $('form').validate({
-        rules: {
-            firstname: "required",
-            lastname: "required",
-            email: "required",
-            message: "required"
-        },
-        messages: {
-            firstname: "Please enter your first name",
-            lastname: "Please enter your last name",
-            email: "Please enter your email address",
-            message: "Please enter your messagee"
-        }
-    });
-
-});*/
-
-
-});
